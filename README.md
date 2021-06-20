@@ -4,15 +4,8 @@ Auto file forward bot.
 Without Admin Permission in FROM_CHANNEL
 Only Give Permission In your Telegram Personal Channel
 
-```
-Please fork this repository don't import code
-Made with Python3
-(C) @DforDarkAngel
-Copyright permission under GNU GENERAL PUBLIC LICENSE
-```
-
 ### Deploy on Heroku
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Jijinr/Frwdit)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/halkatmanus/Auto-File-Forward-Bot)
 
 ## HOW TO DEPLOY YOUTUBE TUTORIAL
 
@@ -20,7 +13,7 @@ Copyright permission under GNU GENERAL PUBLIC LICENSE
 
 Deploy in your vps
 ```sh
-git clone https://github.com/Jijinr/Frwdit
+git clone https://github.com/halkatmanus/Auto-File-Forward-Bot
 cd Frwit
 pip3 install -r requirements.txt
 # <Create Variables appropriately>
