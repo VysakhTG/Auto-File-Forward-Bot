@@ -11,10 +11,11 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 @Client.on_message(filters.private & filters.command(['start']))
 async def start(client, message):
     buttons = [[
-        InlineKeyboardButton('⭕️ REQUEST GROUP ⭕️', url='https://t.me/RequestVideos'),
-        InlineKeyboardButton('⭕️ JOIN OUR CHANNEL ⭕️', url='https://t.me/VlDE0S')
+        InlineKeyboardButton('CHANNEL', url='https://t.me/HalkatVideos'),
+        InlineKeyboardButton('GROUP', url='https://t.me/RequestVideos')
     ],[
-        InlineKeyboardButton('DONATE', url='https://paypal.me/ssraut')
+        InlineKeyboardButton('DONATE', url='https://paypal.me/ssraut'),
+        InlineKeyboardButton('CLOSE', callback_data='close_btn')
     ]]
     reply_markup = InlineKeyboardMarkup(buttons)
     await client.send_message(
@@ -27,7 +28,7 @@ async def start(client, message):
 @Client.on_message(filters.private & filters.command(['help']))
 async def help(client, message):
     buttons = [[
-        InlineKeyboardButton('close 🔐', callback_data='close_btn')
+        InlineKeyboardButton('CLOSE', callback_data='close_btn')
     ]]
     reply_markup = InlineKeyboardMarkup(buttons)
     await client.send_message(
@@ -39,8 +40,11 @@ async def help(client, message):
 @Client.on_message(filters.private & filters.command(['about']))
 async def about(client, message):
     buttons = [[
-        InlineKeyboardButton('⭕️ REQUEST GROUP ⭕️', url='https://t.me/RequestVideos'),
-        InlineKeyboardButton('close 🔐', callback_data='close_btn')
+        InlineKeyboardButton('CHANNEL', url='https://t.me/HalkatVideos'),
+        InlineKeyboardButton('GROUP', url='https://t.me/RequestVideos')
+    ],[
+        InlineKeyboardButton('DONATE', url='https://paypal.me/ssraut'),
+        InlineKeyboardButton('CLOSE', callback_data='close_btn')
     ]]
     reply_markup = InlineKeyboardMarkup(buttons)
     await client.send_message(
